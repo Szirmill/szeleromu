@@ -4,7 +4,6 @@ import { RouterLink } from 'vue-router'
 import { useStore } from '@/stores/store'
 
 const store = useStore()
-const megyeId = ref('')
 
 onMounted(async () => {
   if (store.megyek.length === 0) store.getMegyek()
